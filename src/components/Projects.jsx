@@ -13,56 +13,56 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.',
-      longDescription: 'Built with React and Node.js, featuring real-time inventory management, secure payment processing with Stripe, and a comprehensive admin panel for order management.',
-      image: 'https://via.placeholder.com/600x400/14b8a6/ffffff?text=E-Commerce+Platform',
-      techStack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      title: 'Learnlytics',
+      description: 'Learnlytics is a MERN-based academic management system with real-time analytics.',
+      longDescription: 'Learnlytics is a MERN stack-based academic management and analytics platform. It provides role-based access for administrators, lecturers, and students to manage and view academic records securely. Power BI dashboards connected to live MongoDB data via ODBC enable real-time performance tracking, trend analysis, and actionable insights.',
+      image: 'learnlytics.png',
+      techStack: ['React.js', 'Javascript', 'Power BI', 'Node.js', 'Express.js'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example',
-      category: 'Full-Stack',
-    },
-    {
-      id: 2,
-      title: 'AI Chat Application',
-      description: 'Real-time chat application powered by AI with sentiment analysis and smart responses.',
-      longDescription: 'Leverages OpenAI API for intelligent conversations, includes sentiment analysis, message encryption, and a beautiful UI with dark mode support.',
-      image: 'https://via.placeholder.com/600x400/eab308/000000?text=AI+Chat+App',
-      techStack: ['React', 'Python', 'OpenAI', 'WebSocket'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example',
-      category: 'AI/ML',
-    },
-    {
-      id: 3,
-      title: 'Task Management System',
-      description: 'Collaborative task management tool with real-time updates and team collaboration features.',
-      longDescription: 'Features include drag-and-drop task organization, real-time collaboration, file attachments, deadline reminders, and comprehensive analytics dashboard.',
-      image: 'https://via.placeholder.com/600x400/14b8a6/ffffff?text=Task+Manager',
-      techStack: ['React', 'TypeScript', 'Firebase', 'Tailwind'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example',
+      githubUrl: 'https://github.com/heshan-jayaweera/Learnlytics',
       category: 'Web App',
     },
     {
-      id: 4,
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather application with forecasts, maps, and location-based recommendations.',
-      longDescription: 'Integrates multiple weather APIs, provides 7-day forecasts, interactive maps, weather alerts, and personalized recommendations based on weather conditions.',
-      image: 'https://via.placeholder.com/600x400/eab308/000000?text=Weather+Dashboard',
-      techStack: ['React', 'JavaScript', 'API Integration'],
+      id: 2,
+      title: 'Aqualink',
+      description: 'Smart water management platform integrating sustainability and real-time emergency response.',
+      longDescription: 'AquaLink is an integrated smart water management system that handles drinking water delivery, filter production, recycling, and emergency water supply. It connects customers, factories, branches, drivers, and fire brigades through role-based dashboards, real-time tracking, and intelligent emergency dispatch to ensure efficiency, sustainability, and rapid response during critical situations.',
+      image: 'Aqualink.png',
+      techStack: ['React.js', 'MongoDB', 'Javascript', 'Node.js','Leaflet'],
       liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example',
-      category: 'Frontend',
+      githubUrl: 'https://github.com/heshan-jayaweera/Aqualink',
+      category: 'Web App',
+    },
+    {
+      id: 3,
+      title: 'WellnessHub ',
+      description: 'Android wellness app for tracking habits, hydration, mood, and activity.',
+      longDescription: 'WellnessHub is an Android-based wellness tracking application designed to monitor hydration, mood, daily habits, and physical activity. The app features goal setting, progress visualization, and daily reminders to encourage healthy routines. With an intuitive UI and shared preferences, it provides personalized insights to support long-term wellness management.',
+      image: 'wellnesshub.png',
+      techStack: ['Android Studio', 'Kotlin', 'Shared Preferences'],
+      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/heshan-jayaweera/WellnessHub-mobile-application',
+      category: 'Mobile Application',
+    },
+    {
+      id: 4,
+      title: 'Hydrate +',
+      description: 'Hydrate+ is a Kotlin-based mobile app that tracks daily water intake and sends reminders.',
+      longDescription: 'Hydrate+ is a lightweight Android mobile application developed using Kotlin to help users maintain healthy hydration habits. The app allows users to easily track their daily water intake and set personalized reminders to drink water throughout the day. With a simple, intuitive interface, Hydrate+ promotes consistency and awareness, supporting better health through effective hydration monitoring.',
+      image: 'hydrate+.png',
+      techStack: ['Kotlin', 'Android Studio'],
+      liveUrl: 'https://example.com',
+      githubUrl: 'https://github.com/heshan-jayaweera/Hydrateplus-Mobile-App',
+      category: 'Mobile Application',
     },
     {
       id: 5,
       title: 'Machine Learning Model',
       description: 'Image classification model using deep learning for medical diagnosis assistance.',
       longDescription: 'Built with TensorFlow and Keras, this model assists in medical image classification with high accuracy. Includes a web interface for easy interaction and detailed analytics.',
-      image: 'https://via.placeholder.com/600x400/14b8a6/ffffff?text=ML+Model',
+      image: 'https://placehold.co/600x400/14b8a6/ffffff?text=ML+Model',
       techStack: ['Python', 'TensorFlow', 'Flask', 'React'],
-      liveUrl: 'https://example.com',
+      
       githubUrl: 'https://github.com/example',
       category: 'AI/ML',
     },
@@ -71,9 +71,8 @@ const Projects = () => {
       title: 'Social Media Dashboard',
       description: 'Analytics dashboard for social media metrics with real-time data visualization.',
       longDescription: 'Comprehensive analytics platform that aggregates data from multiple social media platforms, provides insights, scheduling capabilities, and automated reporting.',
-      image: 'https://via.placeholder.com/600x400/eab308/000000?text=Social+Dashboard',
+      image: 'https://placehold.co/600x400/eab308/000000?text=Social+Dashboard',
       techStack: ['React', 'Node.js', 'PostgreSQL', 'Chart.js'],
-      liveUrl: 'https://example.com',
       githubUrl: 'https://github.com/example',
       category: 'Full-Stack',
     },
@@ -199,26 +198,30 @@ const Projects = () => {
                       {project.description}
                     </p>
                     <div className="flex gap-4">
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="flex items-center gap-2 text-primary-teal hover:text-primary-yellow transition-colors"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        Live Demo
-                      </a>
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="flex items-center gap-2 text-primary-teal hover:text-primary-yellow transition-colors"
-                      >
-                        <Github className="w-4 h-4" />
-                        GitHub
-                      </a>
+                      {project.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="flex items-center gap-2 text-primary-teal hover:text-primary-yellow transition-colors"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                          Live Demo
+                        </a>
+                      )}
+                      {project.githubUrl && (
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="flex items-center gap-2 text-primary-teal hover:text-primary-yellow transition-colors"
+                        >
+                          <Github className="w-4 h-4" />
+                          GitHub
+                        </a>
+                      )}
                     </div>
                   </div>
                 </motion.div>
@@ -281,24 +284,28 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <a
-                    href={selectedProject.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-3 bg-gradient-primary text-black font-semibold rounded-lg flex items-center gap-2 hover:shadow-lg transition-all"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                    View Live Demo
-                  </a>
-                  <a
-                    href={selectedProject.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-3 border-2 border-primary-teal text-primary-teal font-semibold rounded-lg flex items-center gap-2 hover:bg-primary-teal/10 transition-all"
-                  >
-                    <Github className="w-5 h-5" />
-                    View Code
-                  </a>
+                  {selectedProject.liveUrl && (
+                    <a
+                      href={selectedProject.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 bg-gradient-primary text-black font-semibold rounded-lg flex items-center gap-2 hover:shadow-lg transition-all"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                      View Live Demo
+                    </a>
+                  )}
+                  {selectedProject.githubUrl && (
+                    <a
+                      href={selectedProject.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 border-2 border-primary-teal text-primary-teal font-semibold rounded-lg flex items-center gap-2 hover:bg-primary-teal/10 transition-all"
+                    >
+                      <Github className="w-5 h-5" />
+                      View Code
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

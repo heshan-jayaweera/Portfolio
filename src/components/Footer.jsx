@@ -20,9 +20,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' },
+    { icon: Github, href: 'https://github.com/heshan-jayaweera', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/heshan-jayaweera', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:heshandeeptha13@gmail.com', label: 'Email' },
   ]
 
   const quickLinks = [
@@ -87,16 +87,16 @@ const Footer = () => {
               Contact
             </h4>
             <ul className="space-y-2 text-gray-400">
-              <li>your.email@example.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>Your City, Country</li>
+              <li>heshandeeptha13@gmail.com</li>
+              <li>+94 (071) 397-5395</li>
+              <li>Kurunegala, Sri Lanka</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-primary-teal/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Heshan Jayaweera. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">
             Built with React, Vite & Tailwind CSS

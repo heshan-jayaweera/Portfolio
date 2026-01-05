@@ -10,58 +10,48 @@ const Certifications = () => {
   const certifications = [
     {
       id: 1,
-      title: 'AWS Certified Solutions Architect',
-      organization: 'Amazon Web Services',
-      date: '2024',
-      credentialId: 'AWS-SA-12345',
-      credentialUrl: 'https://aws.amazon.com/verification',
-      logo: 'https://via.placeholder.com/100/14b8a6/ffffff?text=AWS',
+      title: 'Introduction to Data Science',
+      organization: 'Cisco',
+      date: '2025',
+      credentialUrl: 'https://www.credly.com/badges/5db3f06d-ea5a-4753-ab7c-6452678db996/linked_in_profile',
+      logo: 'datascience.png',
     },
     {
       id: 2,
-      title: 'Meta Front-End Developer',
-      organization: 'Meta (Facebook)',
-      date: '2023',
-      credentialId: 'META-FE-67890',
-      credentialUrl: 'https://coursera.org/verify',
-      logo: 'https://via.placeholder.com/100/eab308/000000?text=Meta',
+      title: 'Introduction to Modern AI',
+      organization: 'Cisco',
+      date: '2025',
+      credentialUrl: 'https://www.credly.com/badges/13035157-cbfc-4716-b183-7cc449b2d0d4/linked_in_profile',
+      logo: 'AI.png',
     },
     {
       id: 3,
-      title: 'Google Cloud Professional',
-      organization: 'Google Cloud',
-      date: '2023',
-      credentialId: 'GCP-PRO-11111',
-      credentialUrl: 'https://cloud.google.com/certification',
-      logo: 'https://via.placeholder.com/100/14b8a6/ffffff?text=GCP',
+      title: 'Power BI for Beginners',
+      organization: 'Simplilearn',
+      date: '2025',
+      credentialId: '9624982',
+      credentialUrl: 'https://simpli-web.app.link/e/0NnoQ1VWFZb',
+      logo: 'powerBI.png',
     },
     {
       id: 4,
-      title: 'React Developer Certification',
-      organization: 'freeCodeCamp',
-      date: '2023',
-      credentialId: 'FCC-REACT-22222',
-      credentialUrl: 'https://freecodecamp.org/certification',
-      logo: 'https://via.placeholder.com/100/eab308/000000?text=FCC',
+      title: 'Python for Beginners',
+      organization: 'University of Moratuwa',
+      date: '2025',
+      credentialId: 'HzuQx95Nwb',
+      credentialUrl: 'https://open.uom.lk/lms/mod/customcert/verify_certificate.php',//code:HzuQx95Nwb
+      logo: 'uom.png',
     },
     {
       id: 5,
-      title: 'Machine Learning Specialization',
-      organization: 'Stanford University',
-      date: '2022',
-      credentialId: 'STAN-ML-33333',
-      credentialUrl: 'https://coursera.org/verify',
-      logo: 'https://via.placeholder.com/100/14b8a6/ffffff?text=Stanford',
+      title: 'AI/ML Engineer - Stage 1',
+      organization: 'Sri Lanka Institute of Information Technology',
+      date: '2025',
+      credentialId: 'zxafdg2ltb',
+      credentialUrl: 'https://code.sliit.org/courses/take/ai-ml-stage1/completion',
+      logo: 'sliit.png',
     },
-    {
-      id: 6,
-      title: 'Full Stack Web Development',
-      organization: 'The Odin Project',
-      date: '2022',
-      credentialId: 'TOP-FS-44444',
-      credentialUrl: 'https://theodinproject.com',
-      logo: 'https://via.placeholder.com/100/eab308/000000?text=TOP',
-    },
+    
   ]
 
   const containerVariants = {
@@ -121,8 +111,17 @@ const Certifications = () => {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary-teal/10 rounded-full -mr-16 -mt-16" />
                 <div className="relative z-10">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="w-16 h-16 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0">
-                      <Award className="w-8 h-8 text-primary-teal" />
+                    <div className="w-16 h-16 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                      {cert.logo ? (
+                        <img
+                          src={cert.logo.startsWith('http') ? cert.logo : `/${cert.logo}`}
+                          alt={`${cert.title} logo`}
+                          className="w-full h-full object-contain"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <Award className="w-8 h-8 text-primary-teal" />
+                      )}
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-white mb-1">

@@ -4,16 +4,22 @@ import { useRef } from 'react'
 import {
   SiReact,
   SiJavascript,
+  SiPhp,
+  SiHtml5,
+  SiC,
+  SiCplusplus,
+  SiKotlin,
   SiPython,
   SiNodedotjs,
   SiMongodb,
-  SiPostgresql,
+  SiR,
   SiGit,
-  SiDocker,
+  SiVisualstudiocode,
+  SiEclipseide,
+  SiAndroidstudio,
   SiTailwindcss,
-  SiTypescript,
   SiExpress,
-  SiFirebase,
+  SiMicrosoftsqlserver,
 } from 'react-icons/si'
 
 const Skills = () => {
@@ -25,8 +31,13 @@ const Skills = () => {
       title: 'Programming Languages',
       skills: [
         { name: 'JavaScript', icon: SiJavascript, level: 90, color: 'text-yellow-400' },
-        { name: 'TypeScript', icon: SiTypescript, level: 85, color: 'text-blue-400' },
-        { name: 'Python', icon: SiPython, level: 80, color: 'text-blue-500' },
+        { name: 'C', icon: SiC, level: 80, color: 'text-blue-400' },
+        { name: 'C++', icon: SiCplusplus, level: 80, color: 'text-slate-400' },
+        { name: 'Python', icon: SiPython, level: 70, color: 'text-blue-500' },
+        { name: 'Kotlin', icon: SiKotlin, level: 60, color: 'text-blue-500' },
+        { name: 'PHP', icon: SiPhp, level: 70, color: 'text-purple-500' },
+        { name: 'R', icon: SiR, level: 75, color: 'text-blue-400' },
+        { name: 'HTML5', icon: SiHtml5, level: 90, color: 'text-orange-500' },
       ],
     },
     {
@@ -42,10 +53,13 @@ const Skills = () => {
       title: 'Tools & Platforms',
       skills: [
         { name: 'Git', icon: SiGit, level: 90, color: 'text-orange-500' },
-        { name: 'Docker', icon: SiDocker, level: 75, color: 'text-blue-400' },
+        { name: 'VS Code', icon: SiVisualstudiocode, level: 90, color: 'text-blue-500' },
+        { name: 'Eclipse', icon: SiEclipseide, level: 80, color: 'text-purple-500' },
+        { name: 'Android Studio', icon: SiAndroidstudio, level: 75, color: 'text-green-400' },
         { name: 'MongoDB', icon: SiMongodb, level: 85, color: 'text-green-400' },
-        { name: 'PostgreSQL', icon: SiPostgresql, level: 80, color: 'text-blue-600' },
-        { name: 'Firebase', icon: SiFirebase, level: 75, color: 'text-orange-400' },
+        { name: 'SSMS', icon: SiMicrosoftsqlserver, level: 80, color: 'text-red-500' },
+
+        
       ],
     },
   ]

@@ -50,7 +50,7 @@ const Navbar = () => {
             className="text-2xl font-bold text-gradient cursor-pointer"
             onClick={() => scrollToSection('#home')}
           >
-            Portfolio
+           Heshan's Portfolio
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -69,15 +69,7 @@ const Navbar = () => {
                 {item.name}
               </motion.a>
             ))}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-full bg-primary-teal/20 hover:bg-primary-teal/30 transition-colors"
-              aria-label="Toggle theme"
-            >
-              {darkMode ? <Sun className="w-5 h-5 text-primary-yellow" /> : <Moon className="w-5 h-5 text-primary-teal" />}
-            </motion.button>
+            
           </div>
 
           {/* Mobile menu button */}

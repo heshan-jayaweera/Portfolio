@@ -43,7 +43,7 @@ const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
-    // Clear error when user starts typing
+   
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: '' }))
     }
@@ -60,7 +60,7 @@ const Contact = () => {
     setSubmitStatus(null)
 
     try {
-      // Replace with your EmailJS credentials
+     
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
@@ -160,7 +160,7 @@ const Contact = () => {
           />
 
           <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Information */}
+            
             <motion.div variants={itemVariants} className="space-y-8">
               <div>
                 <h3 className="text-2xl font-semibold text-primary-teal mb-4">
