@@ -57,14 +57,14 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'Machine Learning Model',
-      description: 'Image classification model using deep learning for medical diagnosis assistance.',
-      longDescription: 'Built with TensorFlow and Keras, this model assists in medical image classification with high accuracy. Includes a web interface for easy interaction and detailed analytics.',
-      image: 'https://placehold.co/600x400/14b8a6/ffffff?text=ML+Model',
-      techStack: ['Python', 'TensorFlow', 'Flask', 'React'],
+      title: 'Supportify',
+      description: 'Web-based customer support system with role-based ticket management and analytics.',
+      longDescription: 'This is a web-based customer support system developed using PHP and MySQL, designed to manage support tickets, users, and customer interactions through role-based access. As my first-ever software project, it represents a foundational learning experience in full-stack development, database design, authentication, and building real-world web applications.',
+      image: 'supportify.png',
+      techStack: ['php', 'phpMyadmin', 'xampp', 'CSS', 'HTML'],
       
-      githubUrl: 'https://github.com/example',
-      category: 'AI/ML',
+      githubUrl: 'https://github.com/heshan-jayaweera/Customer-Support-System',
+      category: 'Full-Stack',
     },
     {
       id: 6,
