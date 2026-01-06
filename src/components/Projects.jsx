@@ -21,6 +21,15 @@ const Projects = () => {
       liveUrl: 'https://learnlyticsfe.vercel.app/login',
       githubUrl: 'https://github.com/heshan-jayaweera/Learnlytics',
       category: 'Web App',
+      credentials: [
+        { role: 'Lecturer — marks entry only', email: 'lecturer@gmail.com' },
+        { role: 'Student', email: 'shehan@gmail.com' },
+        { role: 'Student', email: 'ashen@gmail.com' },
+        { role: 'Student', email: 'dilukshan@gmail.com' },
+        { role: 'Student', email: 'dineth@gmail.com' },
+        { role: 'Student', email: 'dinil@gmail.com' },
+      ],
+      password: '123456',
     },
     {
       id: 2,
@@ -32,6 +41,14 @@ const Projects = () => {
       liveUrl: 'https://aqualinkfe.vercel.app/',
       githubUrl: 'https://github.com/heshan-jayaweera/Aqualink',
       category: 'Web App',
+      credentials: [
+        { role: 'Customer', email: 'customer@gmail.com' },
+        { role: 'Factory', email: 'factory@gmail.com' },
+        { role: 'Branch Manager', email: 'bm@aqualink.com' },
+        { role: 'Driver', email: 'driver@aqualink.com' },
+        { role: 'Fire Brigade', email: 'fire@gmail.com' },
+      ],
+      password: 'password123',
     },
     {
       id: 3,
@@ -188,6 +205,24 @@ const Projects = () => {
                     <p className="text-gray-300 mb-4 line-clamp-2">
                       {project.description}
                     </p>
+                    {project.credentials && project.password && (
+                      <div className="mb-4 rounded-lg border border-primary-teal/30 bg-gray-800/40 p-3">
+                        <p className="text-sm font-semibold text-primary-yellow mb-2">
+                          Demo Credentials
+                        </p>
+                        <ul className="space-y-1 text-xs text-gray-300">
+                          {project.credentials.map((c) => (
+                            <li key={c.role} className="flex items-center justify-between gap-3">
+                              <span className="text-gray-400 w-32 shrink-0">{c.role}</span>
+                              <span className="font-medium break-all">{c.email}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <p className="mt-2 text-xs text-gray-400">
+                          Password: <span className="text-gray-200 font-medium">{project.password}</span>
+                        </p>
+                      </div>
+                    )}
                     <div className="flex gap-4">
                       {project.liveUrl && (
                         <a
@@ -259,6 +294,24 @@ const Projects = () => {
                 <p className="text-gray-300 mb-6 leading-relaxed">
                   {selectedProject.longDescription}
                 </p>
+                {selectedProject.credentials && selectedProject.password && (
+                  <div className="mb-6 rounded-lg border border-primary-teal/40 bg-gray-800/50 p-4">
+                    <h4 className="text-lg font-semibold text-primary-yellow mb-3">
+                      Demo Credentials
+                    </h4>
+                    <div className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
+                      {selectedProject.credentials.map((c) => (
+                        <div key={c.role} className="flex items-center gap-3">
+                          <span className="text-sm text-gray-400 w-36 shrink-0">{c.role}</span>
+                          <span className="text-sm font-medium text-gray-100 break-all">{c.email}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="mt-3 text-sm text-gray-300">
+                      Password: <span className="font-semibold text-white">{selectedProject.password}</span>
+                    </p>
+                  </div>
+                )}
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold text-primary-yellow mb-3">
                     Tech Stack
