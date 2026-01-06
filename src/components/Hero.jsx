@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Download, ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
+import { Download, ArrowRight, Github, Linkedin, Mail, ExternalLink } from 'lucide-react'
 import TypingEffect from './TypingEffect'
 
 const Hero = () => {
@@ -94,7 +94,18 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5" />
             </motion.a>
             <motion.a
-              href="/Heshan_Jayaweera_CV.pdf"
+              href="/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-3 border-2 border-primary-teal text-primary-teal font-semibold rounded-lg flex items-center gap-2 hover:bg-primary-teal/10 transition-all"
+            >
+              View Resume
+              <ExternalLink className="w-5 h-5" />
+            </motion.a>
+            <motion.a
+              href="/Resume.pdf"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
