@@ -51,7 +51,7 @@ const Projects = () => {
       longDescription: 'Hydrate+ is a lightweight Android mobile application developed using Kotlin to help users maintain healthy hydration habits. The app allows users to easily track their daily water intake and set personalized reminders to drink water throughout the day. With a simple, intuitive interface, Hydrate+ promotes consistency and awareness, supporting better health through effective hydration monitoring.',
       image: 'hydrate+.png',
       techStack: ['Kotlin', 'Android Studio'],
-      liveUrl: 'https://example.com',
+      
       githubUrl: 'https://github.com/heshan-jayaweera/Hydrateplus-Mobile-App',
       category: 'Mobile Application',
     },
