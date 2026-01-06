@@ -40,7 +40,7 @@ const Projects = () => {
       longDescription: 'WellnessHub is an Android-based wellness tracking application designed to monitor hydration, mood, daily habits, and physical activity. The app features goal setting, progress visualization, and daily reminders to encourage healthy routines. With an intuitive UI and shared preferences, it provides personalized insights to support long-term wellness management.',
       image: 'wellnesshub.png',
       techStack: ['Android Studio', 'Kotlin', 'Shared Preferences'],
-      liveUrl: 'https://example.com',
+      
       githubUrl: 'https://github.com/heshan-jayaweera/WellnessHub-mobile-application',
       category: 'Mobile Application',
     },
@@ -66,16 +66,7 @@ const Projects = () => {
       githubUrl: 'https://github.com/heshan-jayaweera/Customer-Support-System',
       category: 'Full-Stack',
     },
-    {
-      id: 6,
-      title: 'Social Media Dashboard',
-      description: 'Analytics dashboard for social media metrics with real-time data visualization.',
-      longDescription: 'Comprehensive analytics platform that aggregates data from multiple social media platforms, provides insights, scheduling capabilities, and automated reporting.',
-      image: 'https://placehold.co/600x400/eab308/000000?text=Social+Dashboard',
-      techStack: ['React', 'Node.js', 'PostgreSQL', 'Chart.js'],
-      githubUrl: 'https://github.com/example',
-      category: 'Full-Stack',
-    },
+   
   ]
 
   const categories = ['All', ...new Set(projects.map((p) => p.category))]
