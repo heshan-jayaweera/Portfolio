@@ -18,7 +18,7 @@ const Projects = () => {
       longDescription: 'Learnlytics is a MERN stack-based academic management and analytics platform. It provides role-based access for administrators, lecturers, and students to manage and view academic records securely. Power BI dashboards connected to live MongoDB data via ODBC enable real-time performance tracking, trend analysis, and actionable insights.',
       image: 'learnlytics.png',
       techStack: ['React.js', 'Javascript', 'Power BI', 'Node.js', 'Express.js'],
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://learnlyticsfe.vercel.app/login',
       githubUrl: 'https://github.com/heshan-jayaweera/Learnlytics',
       category: 'Web App',
     },
