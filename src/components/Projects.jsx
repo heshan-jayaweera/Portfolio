@@ -29,7 +29,7 @@ const Projects = () => {
       longDescription: 'AquaLink is an integrated smart water management system that handles drinking water delivery, filter production, recycling, and emergency water supply. It connects customers, factories, branches, drivers, and fire brigades through role-based dashboards, real-time tracking, and intelligent emergency dispatch to ensure efficiency, sustainability, and rapid response during critical situations.',
       image: 'Aqualink.png',
       techStack: ['React.js', 'MongoDB', 'Javascript', 'Node.js','Leaflet'],
-      liveUrl: 'https://example.com',
+      liveUrl: 'https://aqualinkfe.vercel.app/',
       githubUrl: 'https://github.com/heshan-jayaweera/Aqualink',
       category: 'Web App',
     },
