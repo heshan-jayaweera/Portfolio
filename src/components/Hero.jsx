@@ -94,7 +94,7 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5" />
             </motion.a>
             <motion.a
-              href="/resume.pdf"
+              href="/Heshan_Jayaweera_CV.pdf"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
