@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X, Moon, Sun } from 'lucide-react'
-import { useContext } from 'react'
-import ThemeContext from '../context/ThemeContext'
+import { Menu, X } from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const { darkMode, setDarkMode } = useContext(ThemeContext)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,15 +71,6 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-4">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-full bg-primary-teal/20"
-              aria-label="Toggle theme"
-            >
-              {darkMode ? <Sun className="w-5 h-5 text-primary-yellow" /> : <Moon className="w-5 h-5 text-primary-teal" />}
-            </motion.button>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white focus:outline-none"
