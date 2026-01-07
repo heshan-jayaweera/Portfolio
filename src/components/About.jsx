@@ -114,7 +114,7 @@ const About = () => {
               {
                 icon: GraduationCap,
                 title: 'Education',
-                description: 'Bachelor’s in Information Technology Speacilizing in Information Technology-Undergraduate',
+                description: 'Bachelor’s in Information Technology Speacializing in Information Technology-Undergraduate',
               },
               {
                 icon: Target,
