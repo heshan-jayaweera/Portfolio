@@ -24,8 +24,19 @@ const Certifications = () => {
       credentialUrl: 'https://www.credly.com/badges/13035157-cbfc-4716-b183-7cc449b2d0d4/linked_in_profile',
       logo: 'AI.png',
     },
+
     {
       id: 3,
+      title: 'Artificial Intelligence Fundamentals',
+      organization: 'IBM',
+      date: '2026',
+      credentialUrl: 'https://www.credly.com/badges/4d8f0068-da9f-4bce-b943-ac5557a67e8e/linked_in_profile',
+      logo: 'AI Fundamentals.png',
+    },
+
+
+    {
+      id: 4,
       title: 'Power BI for Beginners',
       organization: 'Simplilearn',
       date: '2025',
@@ -34,7 +45,7 @@ const Certifications = () => {
       logo: 'powerBI.png',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Python for Beginners',
       organization: 'University of Moratuwa',
       date: '2025',
@@ -43,7 +54,7 @@ const Certifications = () => {
       logo: 'uom.png',
     },
     {
-      id: 5,
+      id: 6,
       title: 'AI/ML Engineer - Stage 1',
       organization: 'Sri Lanka Institute of Information Technology',
       date: '2025',
