@@ -42,7 +42,7 @@ const Certifications = () => {
       date: '2025',
       credentialId: '9624982',
       credentialUrl: 'https://simpli-web.app.link/e/0NnoQ1VWFZb',
-      logo: 'powerBI.png',
+      logo: 'simplilearn.png',
     },
     {
       id: 5,
@@ -62,7 +62,24 @@ const Certifications = () => {
       credentialUrl: 'https://code.sliit.org/courses/take/ai-ml-stage1/completion',
       logo: 'sliit.png',
     },
-    
+    {
+      id: 7,
+      title: 'AI/ML Engineer - Stage 2',
+      organization: 'Sri Lanka Institute of Information Technology',
+      date: '2026',
+      credentialId: 'sy1znpqpdu',
+      credentialUrl: 'https://code.sliit.org/certificates/sy1znpqpdu',
+      logo: 'sliit.png',
+    },
+    {
+      id: 8,
+      title: 'Getting Started with Docker',
+      organization: 'Simplilearn',
+      date: '2026',
+      credentialId: '9726466',
+      credentialUrl: 'https://simpli-web.app.link/e/TPUqTTH8ZZb',
+      logo: 'simplilearn.png',
+    },
   ]
 
   const containerVariants = {
