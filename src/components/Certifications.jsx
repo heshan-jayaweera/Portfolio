@@ -80,6 +80,14 @@ const Certifications = () => {
       credentialUrl: 'https://simpli-web.app.link/e/TPUqTTH8ZZb',
       logo: 'simplilearn.png',
     },
+    {
+      id: 9,
+      title: 'Networking Basics',
+      organization: 'Cisco',
+      date: '2026',
+      credentialUrl: 'https://www.credly.com/badges/76ba220d-3804-41c7-8732-dc966555e8b1/linked_in_profile',
+      logo: 'networking_basics.png',
+    },
   ]
 
   const containerVariants = {
